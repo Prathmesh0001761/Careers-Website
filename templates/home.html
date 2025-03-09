@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-    <h1 class="text-center"> Prathmesh Careers</h1>
+    <h1 class="text-center"> {{company_name}} Careers</h1>
     <img class='img-fluid' id="banner" src="https://99d379f4-e9a7-41b9-9236-ce82cf63b5aa-00-2pidz2bfabqq3.pike.replit.dev/static/banner.jpg" >
   </body>
   <h2 class="text-center mt-2 mb-4">About PK</h2>
@@ -23,7 +23,11 @@
     Lorem ipsum odor amet, consectetuer adipiscing elit. Porta accumsan commodo montes auctor per id dictum ad. Arcu congue montes odio justo quis eu mauris egestas. Risus tellus vel volutpat vivamus nisi nostra potenti. Netus torquent sem adipiscing; ultrices sagittis hendrerit tempor. Arhoncus urna sem vulputate pellentesque dapibus fames. Aenean primis suspendisse efficitur tristique fusce porta proin. Vivamus ultricies facilisis aenean auctor quam pellentesque vulputate nibh. Pellentesque etiam finibus efficitur gravida pharetra amet. Odio nam cubilia ultricies; sagittis senectus malesuada eleifend. Ultricies felis cubilia nec molestie pellentesque donec tortor vehicula. Mauris laoreet mus massa ut lacus curabitur. Quam habitasse senectus tortor convallis vel. Morbi habitasse nam faucibus suscipit vel porta sit. Pretium quam cubilia fusce phasellus maximus dis dui litora augue. Nibh aenean quisque parturient cursus facilisi sit orci. Penatibus mattis vestibulum cras lacus tortor; morbi est id. Blandit finibus commodo hendrerit facilisis litora ullamcorper maecenas risus tortor. Penatibus tortor leo ridiculus vehicula inceptos.
   </p>
   <h2 class="text-center  mt-2 mb-4">Open Positions</h2>
-  <p>TODO - Show the jobs here</p>
+  <div >
+    {% for job in jobs %}
+      {% include 'jobitem.html'%}
+    {% endfor %}
+  </div>
   <div class="text-center">
   <button class="btn btn-primary btn-lg">Contact Us</button>
     <p class='mt-4'>Copyright 2022,PK</p>
